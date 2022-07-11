@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Building a Survey Form </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Microverse Survey Form</h1>
+    <form id="servey-form">
+    <div class="form-control">
+        <label  id="name-label">Name: </label>
+        <input type="text" id="name" placeholder="Enter your name" />
+    </div>
+    <div class="form-control">
+        <label for="email-label">Email: </label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+      </div>
+      
+        <div class="form-control">
+          <label for="number"> Age:</label> <input type="text" id="number-label" placeholder="Enter your age" required min="18" max="60" title="enter numeric values between 18 and 60" pattern="\d+"> 
+        </div>
+      
+        <div class="form-control">
+            <label  id="label-role">Which option best describes you? </label>
+    <br>
+            <select  id="role">
+                <option value="student">Student</option>
+                <option value="intern">Intern</option>
+                <option value="professional"> Professional</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+  
+          <div class="form-control">
+            <label id="gender-label"> Gender:  </label>
+    
+            <input type="radio"  id="male" required> 
+            <label class="radio" id="male-label" >Male</label>
+
+            <input type="radio"  id="female">
+            <label class="radio" id="female-label">Female</label>
+        </div>
+            
+      
+          <div class="form-control">
+            <label for="final-feedback">Please provide the suggestions:</label>
+            <br>
+              <input type="textarea" rows="10" height="18">
+          </div>
+          <br>
+       <div class="form-control">       
+       <button type="Submit" id="button">Submit
+         </button>
+       </div>     
+      </form>
+      </body>
+    
+</html>
